@@ -22,7 +22,7 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create #update, null 등 사용 가능하지만,최초만 create 후 나중에 update로 변경해야 함. 
+      ddl-auto: update #update, null 등 사용 가능하지만,최초만 create 후 나중에 update로 변경해야 함. 
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
       use-new-id-generator-mappings: false #jpa가 사용하는 기본 넘버링 전략 사용 안함. IDENTITY generated value
